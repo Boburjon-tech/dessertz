@@ -1,0 +1,245 @@
+
+@font-face {
+  font-display: swap; 
+  font-family: 'Red Hat Text';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./fonts/red-hat-text-v18-latin-regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap; 
+  font-family: 'Red Hat Text';
+  font-style: normal;
+  font-weight: 600;
+  src: url('./fonts/red-hat-text-v18-latin-600.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap; 
+  font-family: 'Red Hat Text';
+  font-style: normal;
+  font-weight: 700;
+  src: url('./fonts/red-hat-text-v18-latin-700.woff2') format('woff2');
+}
+
+:root {
+  /* Colors */
+  --color-red: #c7380f;
+
+  --color-rose-900: #260f08;
+  --color-rose-500: #87635a;
+  --color-rose-400: #ad8a85;
+  --color-rose-300: #caafa7;
+  --color-rose-100: #f5eeec;
+  --color-rose-50: #fcf8f6;
+
+  --color-green: #1ea575;
+
+  --color-black: #000000;
+  --color-white: #ffffff;
+
+  /* Typography */
+  --font-primary: "Red Hat Text", sans-serif;
+
+  --font-size-preset-1: 5.6rem; /* 56px */
+  --line-height-preset-1: 1.209; /* 120.9% line-height */
+  --letter-spacing-preset-1: 0;
+
+  --font-size-preset-2: 2.4rem; /* 24px */
+  --line-height-preset-2: 1.25; /* 125% line-height */
+  --letter-spacing-preset-2: 0;
+
+  --font-size-preset-3: 1.6rem; /* 16px */
+  --line-height-preset-3: 1.5; /* 150% line-height */
+  --letter-spacing-preset-3: 0;
+
+  --font-size-preset-4: 1.4rem; /* 14px */
+  --line-height-preset-4: 1.5; /* 150% line-height */
+  --letter-spacing-preset-4: 0;
+}
+
+*,*::after,*:before{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a{
+  text-decoration: none;
+}
+ul,ol li {
+  text-decoration: none;
+}
+
+html {
+  font-size: 62.5%;
+  
+}
+body {
+  font-family: "Red Hat Text";
+  background-color:var(--color-rose-50);
+}
+.btn {
+  border-radius:999px;
+  background-color:transparent;
+  border:0;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.container {
+  width: 100%;
+  max-width: 1276px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+.grid-container {
+  padding-top: 8.8rem;
+  padding-bottom: 8.8rem;
+  display: grid;
+  grid-template-columns: 67.5% calc(32.5% - 3.2rem);
+  gap:3.2rem;
+  grid-auto-rows: auto; 
+  align-items: start;
+}
+.main-div {
+  
+}
+
+.desserts-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.desserts-title {
+  font-size: var(--font-size-preset-1);
+  line-height: var(--line-height-preset-1);
+  margin-bottom: 3.2rem;
+}
+
+.products-container {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap:2.4rem;
+}
+.dessert-card-image {
+  width: 100%;
+  border-radius: 0.8rem;
+}
+
+.desserts-card-body {
+}
+.dessert-card-category {
+  font-size: var(--font-size-preset-4);
+  line-height: var(--line-height-preset-4);
+  color: var(--color-rose-500);
+}
+.dessert-card-name {
+  font-size: var(--font-size-preset-3);
+  line-height: var(--line-height-preset-3);
+  color: var(--color-rose-900);
+  font-weight: 600;
+}
+.dessert-card-price {
+  font-size: var(--font-size-preset-3);
+  line-height: var(--line-height-preset-3);
+  color: var(--color-red);
+  font-weight: 600;
+}
+
+.buttons-wrapper {
+  align-self: center;
+  margin-top: -22.8px;
+}
+
+.add-to-card-btn {
+  border:2px solid var(--color-rose-400);
+  padding:1.2rem 2.8rem;
+  transition: 0.3s;
+  background-color: #ffff;
+  font-weight: 600;
+}
+.add-to-card-btn:hover {
+  border-color: var(--color-red);
+}
+
+.add-to-card-btn:hover .add-to-card-btn-wrapper {
+  color:var(--color-red);
+}
+
+.add-to-card-btn-wrapper {
+  display: flex;
+  gap: 0.8rem;
+  align-items: center;
+}
+
+.your-card-container {
+border-radius: 1.2rem;
+height: auto;
+padding:2.4rem;
+gap:2.4rem;
+background-color:#fff;
+}
+.Amount-myAdded-desserts {
+  font-size: var(--font-size-preset-2);
+  color:var(--color-red);
+  font-weight: bold;
+}
+
+.illustration-empty-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+}
+
+.illustration-empty-cart-image {
+  margin-top: 1.6rem;
+  width:12.8rem;
+  height:12.8rem;
+}
+
+.empty-text {
+  font-size: var(--font-size-preset-4);
+  font-weight: 600;
+  color:var(--color-rose-500);
+  margin-bottom: 1.6rem;
+}
+
+
+@media screen and  (max-width:998px)  {
+  .main-div{
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width:400px) {
+  .products-container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.Dessert-amount-incr-decr {
+  display: flex;
+  align-items:center;
+  gap:4.3rem;
+  padding:12.3px;
+  background-color:var(--color-red);
+  color:#fff;
+  border-radius:999px;
+
+  button {
+    display: flex;
+    border-radius:50%;
+    border:1px solid #fff;
+    background-color: var(--color-red);
+    width:18px;
+    height:18px;
+    align-items:center;
+    justify-content: center;
+  }
+}
