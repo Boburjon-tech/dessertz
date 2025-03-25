@@ -177,6 +177,8 @@ body {
 }
 
 .your-card-container {
+  display: flex;
+  flex-direction: column;
 border-radius: 1.2rem;
 height: auto;
 padding:2.4rem;
@@ -296,4 +298,60 @@ background-color:#fff;
     display: flex;
   }
 
+}
+
+.total-price-container {
+  display: flex;
+  margin-top: 2.4rem;
+  margin-bottom: 2.4rem;
+  align-items: center;
+}
+.order-total {
+  font-size: var(--font-size-preset-4);
+  color:var(--color-rose-900);
+  margin-right: auto;
+}
+.order-total-price {
+  color:var(--color-rose-900);
+  font-size: var(--font-size-preset-2);
+}
+.carbon-neutral {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2.4rem;
+  justify-content: center;
+  background-color:var(--color-rose-50);
+  border-radius: 0.8rem;
+  padding: 16px 51.5px;
+
+  p{
+    font-size: var(--font-size-preset-4);
+    color:var(--color-rose-900);
+  }
+}
+.confirm-button {
+  padding: 16px 113.5px;
+  margin-right: auto;
+  margin-left: auto;
+  border-radius:999px;
+  border:2px solid var(--color-red);
+  background-color:var(--color-red);
+  color:#fff ;
+
+}
+
+.inner-div {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-overlay {
+  position: fixed;
+  top:40%;
+  left: 40%;
+}
+
+.btn-carbon {
+  display: flex;
+  flex-direction: column;
 }

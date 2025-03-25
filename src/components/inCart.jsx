@@ -1,8 +1,7 @@
 import { useGlobalContext } from "../hooks/useGlobalContext";
 
-function InCart({ d,Cartlength }) {
+function InCart({ d }) {
     const { dispatch } = useGlobalContext();
-
     return (
         <div >
            <div className="added-dessert-wrapper">
