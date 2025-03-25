@@ -59,7 +59,7 @@ return (
         <div className="desserts-card-body">
             <p className="dessert-card-category">{category}</p>
             <h3 className="dessert-card-name">{name}</h3>
-            <p className="dessert-card-price">${price}</p>
+            <p className="dessert-card-price">${price}.0</p>
         </div>
     </div>
     
